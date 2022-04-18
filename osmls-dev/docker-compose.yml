@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  backend:
+    build: https://github.com/OsmLifeSimulation/osmlifesimulation.git#dev
+    ports:
+      - "8082:80"
+  frontend:
+    build: https://github.com/Distera/OSMLS-Frontend.git#dev
+    ports:
+      - "80:80"
